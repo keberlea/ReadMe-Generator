@@ -1,3 +1,39 @@
+function generateReadme(answers) {
+  return `
+  <h1 align ="center"> ${answers.Title} </h1>
+  
+  ![badge](https://img.sheilds.io/badge/licnese-${ansers.license}-brightgreen)<br/>
+  
+  ## Description
+    ${answers.Description}
+
+  ## Table of Contents
+   - [Description](#Description)
+   - [Installation](#Installation)
+   - [Usage](#Usage)
+   - [License](#License)
+   - [Contributing](#Contributers)
+   - [Tests](#Tests)
+   - [Questions](#Questions)
+
+  ## Installation
+  ${answers.Installation}
+
+  ## Usage
+  ${answers.Usage}
+
+  ## License
+  ![badge](https/img.shields.io/badge.license-${answers.License}-brightgreen)
+  This application is covered by the ${answers.License}.
+
+  ## Contributing
+  ${answers.Contributers}
+
+
+  `
+}
+
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {}
@@ -17,4 +53,4 @@ function generateMarkdown(data) {
 `;
 }
 
-module.exports = generateMarkdown;
+module.exports = generateReadme;
