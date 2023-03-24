@@ -10,7 +10,7 @@ const questions = [];
         .prompt([
             {
                 type: 'input',
-                name: 'Project Title',
+                name: 'Title',
                 message: 'What is the title of your project?',
                 validate: function (answer) {
                     if (answer.length < 1) {
@@ -21,7 +21,7 @@ const questions = [];
             },
             {
                 type: 'input',
-                name: 'Project Description',
+                name: 'Description',
                 message: 'What is the description of your project?',
                 validate: function (answer) {
                     if (answer.length < 1) {
@@ -37,7 +37,7 @@ const questions = [];
             },
             {
                 type: 'input',
-                name: 'UsageS',
+                name: 'Usage',
                 message: 'Instruction for use and examples of your project in use.'
             },
             {
@@ -58,7 +58,7 @@ const questions = [];
         );
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
+function writeToFileAsync (fileName, data) {
 
     fs.writeFile('README.md', writecontent, (err) =>
       err ? console.log(err) : console.log('Successfully created README.md file!')
