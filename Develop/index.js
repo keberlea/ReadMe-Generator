@@ -35,7 +35,7 @@ const questions = [];
             },
             {
                 type: 'input',
-                name: 'Usage',
+                name: 'UsageS',
                 message: 'Instruction for use and examples of your project in use.'
             },
             {
