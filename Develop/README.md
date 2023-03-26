@@ -1,10 +1,10 @@
 
-  <h1 align ="center"> i love ddddddd </h1>
+  # hi mom
   
-  ![badge](https://img.sheilds.io/badge/licnese-undefined-brightgreen)<br/>
+  ![badge](https://img.sheilds.io/badge/licnese-MIT License-brightgreen)<br/>
   
   ## Description
-    dddddddddddddddddddd
+    love you
 
   ## Table of Contents
    - [Description](#Description)
@@ -16,17 +16,17 @@
    - [Questions](#Questions)
 
   ## Installation
-  ddd then ddd
+  just love
 
   ## Usage
-  when you need tofeel the love
+  none love
 
   ## License
   ![badge](https/img.shields.io/badge.license-MIT License-brightgreen)
   This application is covered by the MIT License.
 
   ## Contributing
-  Just love d
+  love
 
 
   
