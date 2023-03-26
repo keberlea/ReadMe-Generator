@@ -1,8 +1,8 @@
-function generateReadme(answers) {
+function generateMarkdown(answers) {
   return `
   <h1 align ="center"> ${answers.Title} </h1>
   
-  ![badge](https://img.sheilds.io/badge/licnese-${ansers.license}-brightgreen)<br/>
+  ![badge](https://img.sheilds.io/badge/licnese-${answers.license}-brightgreen)<br/>
   
   ## Description
     ${answers.Description}
@@ -32,7 +32,7 @@ function generateReadme(answers) {
 
   `
 }
-
+/*
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -52,5 +52,5 @@ function generateMarkdown(data) {
 
 `;
 }
-
-module.exports = generateReadme;
+*/
+module.exports = generateMarkdown;
