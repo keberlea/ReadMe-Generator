@@ -1,8 +1,8 @@
 function generateMarkdown(answers) {
   return `
-  <h1 align ="center"> ${answers.Title} </h1>
+  # ${answers.Title}
   
-  ![badge](https://img.sheilds.io/badge/licnese-${answers.license}-brightgreen)<br/>
+  ![badge](https://img.sheilds.io/badge/licnese-${answers.License}-brightgreen)<br/>
   
   ## Description
     ${answers.Description}
