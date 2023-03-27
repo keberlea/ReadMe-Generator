@@ -1,5 +1,48 @@
-function generateMarkdown(answers) {
+// TODO: Create a function that returns a license badge based on which license is passed in
+// If there is no license, return an empty string
+
+function getLicenseBadge (License) {
+  if (!License) {
+    return ''
+  }
+  const licenseImgMap = {
+    MIT: 'https://img.shields.io/badge/License-MIT-yellow.svg',
+    'Apache 2.0': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
+    'GNU GPL v3': 'https://img.shields.io/badge/License-GPLv3-blue.svg'
+    // add more license IMG URLs here as needed
+  }
+  const licenseUrlMap = {
+    'MIT': 'https://opensource.org/licenses/MIT',
+    'Apache 2.0': 'https://opensource.org/licenses/Apache-2.0',
+    'GNU GPL v3': 'https://www.gnu.org/licenses/gpl-3.0'
+    // add more license URLs here as needed
+  }
+  const licenseUrl = licenseUrlMap[License]
+
+  const licenseImg = licenseImgMap[License]
   return `
+    [![License](${licenseImg})(https://opensource.org/licenses/${licenseUrl})`
+}
+
+const licenseBadge = getLicenseBadge()
+console.log(licenseBadge)
+
+/*
+// TODO: Create a function that returns the license link
+// If there is no license, return an empty string
+function renderLicenseLink(license) {}
+
+// TODO: Create a function that returns the license section of README
+// If there is no license, return an empty string
+function renderLicenseSection(license) {}
+
+// TODO: Create a function to generate markdown for README
+
+*/
+
+function generateMarkdown (answers) {
+  return (
+    `
   # ${answers.Title}
   
   ![badge](https://img.sheilds.io/badge/licnese-${answers.License}-brightgreen)<br/>
@@ -23,34 +66,19 @@ function generateMarkdown(answers) {
   ${answers.Usage}
 
   ## License
-  ![badge](https/img.shields.io/badge.license-${answers.License}-brightgreen)
-  This application is covered by the ${answers.License}.
-
+  ` +
+    getLicenseBadge(answers.License) +
+    `
+  This application is covered by the ${answers.License} license.
+  
   ## Contributing
   ${answers.Contributers}
 
 
   `
+  )
 }
-/*
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {}
+module.exports = generateMarkdown
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
-}
-*/
-module.exports = generateMarkdown;
+//![badge](https/img.shields.io/badge.license-${answers.License}-brightgreen)

@@ -10,7 +10,7 @@ let questions = [];
             {
                 type: 'input',
                 name: 'Title',
-                message: 'What is the title of your project?',
+                message: 'What is the title of your project? Required',
                 validate: function (answer) {
                     if (answer.length < 1) {
                         return console.log("A valid project title is required.");
@@ -21,7 +21,8 @@ let questions = [];
             {
                 type: 'input',
                 name: 'Description',
-                message: 'What is the description of your project?',
+                message: 'What is the description of your project? Required',
+                //make sure there is an answer that is more than 1 character
                 validate: function (answer) {
                     if (answer.length < 1) {
                         return console.log("A valid project description is required.");
@@ -47,18 +48,20 @@ let questions = [];
             {
                 type: 'list',
                 name: 'License',
-                choices: ['MIT License','Apache License 2.0','GNU General Public License', 'No license'],
+                choices: ['MIT','Apache 2.0','GNU GPL v3', 'No License'],
                 message: 'Choose a license for your project:'
             },
         ])
         .then((answers) => {
-          console.log(answers);
-          function init() {
-            //write new README.md
-            fs.writeFile('README.md', generateMarkdown(answers), (err) =>
-            err ? console.log(err) : console.log ('Successfully wrote to README.md'));
-            };
-
+            //log answers into console
+            console.log(answers);
+            //function to write the files using the answers
+            function init() {
+            //write new README.md using the generateMarkdown function from the generateMarkdown.js file using the answers
+                fs.writeFile('README.md', generateMarkdown(answers), (err) =>
+                err ? console.log(err) : console.log ('Successfully wrote to README.md'));
+                };
+            //call function to write README.md
             init();
         }
         );
