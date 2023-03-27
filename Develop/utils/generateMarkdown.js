@@ -9,8 +9,8 @@ function getLicenseBadge (License) {
     // add more license IMG URLs here as needed
   }
   const licenseImg = licenseImgMap[License]
-    return `
-    ![badge](${licenseImg})`
+  return `
+  ![badge](${licenseImg})`
   }
 
 
@@ -35,27 +35,9 @@ function getLicense (License) {
   const licenseImg = licenseImgMap[License]
 
   return `
-    [![License](${licenseImg})](https://opensource.org/licenses/${licenseUrl})`
+  [![License](${licenseImg})](https://opensource.org/licenses/${licenseUrl})`
 }
 
-//const license = getLicense()
-//console.log(license)
-
-
-
-
-/*
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-
-*/
 
 function generateMarkdown (answers) {
   return (
@@ -89,9 +71,9 @@ function generateMarkdown (answers) {
   ${answers.Usage}
 
   ## License
-  ` +
-    getLicense(answers.License)
-    +
+  `+
+  getLicense(answers.License)
+  +
   `
   This application is covered by the ${answers.License} license.
   
