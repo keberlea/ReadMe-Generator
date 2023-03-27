@@ -21,7 +21,7 @@ function getLicenseBadge (License) {
 
   const licenseImg = licenseImgMap[License]
   return `
-    [![License](${licenseImg})(https://opensource.org/licenses/${licenseUrl})`
+    [![License](${licenseImg})](https://opensource.org/licenses/${licenseUrl})`
 }
 
 const licenseBadge = getLicenseBadge()
