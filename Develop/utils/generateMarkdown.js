@@ -43,8 +43,6 @@ function generateMarkdown (answers) {
   return (
     `
   # ${answers.Title}
-
-  lincense badge here
   `
   + 
   getLicenseBadge(answers.License) 
@@ -79,6 +77,13 @@ function generateMarkdown (answers) {
   
   ## Contributing
   ${answers.Contributers}
+
+  ## Tests
+  ${answers.Tests}
+
+  ## Questions
+  Link to GitHub profile: https://github.com/${answers.GitHub}
+  If you have questions you can reach me by email at the following address: ${answers.Email}
 
 
   `

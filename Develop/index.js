@@ -51,6 +51,22 @@ let questions = [];
                 choices: ['MIT','Apache 2.0','GNU GPL v3', 'No License'],
                 message: 'Choose a license for your project:'
             },
+            {
+                type: 'input',
+                name: 'Tests',
+                message: 'Provide instrustion and/or guidelines for running tests?'
+            },
+            {
+                type: 'input',
+                name: 'GitHub',
+                message: 'Enter Github Username:'
+            },
+            {
+                type: 'input',
+                name: 'Email',
+                message: 'Enter email associated with github account got questions:'
+            },
+            
         ])
         .then((answers) => {
             //log answers into console
@@ -67,5 +83,5 @@ let questions = [];
         );
 
 
-        module.exports = generateMarkdown;
+ module.exports = generateMarkdown;
 
