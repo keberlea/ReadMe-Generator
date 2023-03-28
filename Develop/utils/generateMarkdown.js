@@ -58,7 +58,7 @@ function generateMarkdown (answers) {
    - [Installation](#Installation)
    - [Usage](#Usage)
    - [License](#License)
-   - [Contributing](#Contributers)
+   - [Contributing](#Contributing)
    - [Tests](#Tests)
    - [Questions](#Questions)
 
@@ -68,11 +68,12 @@ function generateMarkdown (answers) {
   ## Usage
   ${answers.Usage}
 
-  ## License
+  ## License 
   `+
   getLicense(answers.License)
   +
   `
+  <br>
   This application is covered by the ${answers.License} license.
   
   ## Contributing
@@ -83,9 +84,8 @@ function generateMarkdown (answers) {
 
   ## Questions
   Link to GitHub profile: https://github.com/${answers.GitHub}
+  <br>
   If you have questions you can reach me by email at the following address: ${answers.Email}
-
-
   `
   )
 }
