@@ -20,7 +20,7 @@
   This application utilizes the Node Modules, fs and inquirer.
 
   ## Usage
-  This application can be use to generate consistently formatted ReadMe files for gitHub repositories.
+  This application can be use to generate consistently formatted ReadMe files for gitHub repositories. Use commnnd 'node index' to start prompts, answer prompts utilizing information you wish to be a part of your ReadMe file.
 
   ## License
   
