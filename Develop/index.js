@@ -3,10 +3,11 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 
-// TODO: Create an array of questions for user input
+// questions array 
 let questions = [];
     inquirer
         .prompt([
+            //project title
             {
                 type: 'input',
                 name: 'Title',
@@ -19,6 +20,7 @@ let questions = [];
                     return true;
                  }
             },
+            //project description
             {
                 type: 'input',
                 name: 'Description',
@@ -31,38 +33,44 @@ let questions = [];
                     return true;
                 }
             },
+            //project installation
             {
                 type: 'input',
                 name: 'Installation',
                 message: 'Describe the steps requried to install your project?',
             },
+            //project instructions
             {
                 type: 'input',
                 name: 'Usage',
                 message: 'Instruction for use and examples of your project in use.'
             },
+            //project contributers
             {
                 type: 'input',
                 name: 'Contributers',
                 message: 'Are there guidelines for others to contribute to your project?'
             },
-            //chose the type of License for the repository
+            //choose the type of License for the repository
             {
                 type: 'list',
                 name: 'License',
                 choices: ['MIT','Apache 2.0','GNU GPL v3', 'No License'],
                 message: 'Choose a license for your project:'
             },
+            //project tests
             {
                 type: 'input',
                 name: 'Tests',
                 message: 'Provide instrustion and/or guidelines for running tests?'
             },
+            //personal github
             {
                 type: 'input',
                 name: 'GitHub',
                 message: 'Enter Github Username:'
             },
+            //personal/contact email
             {
                 type: 'input',
                 name: 'Email',
