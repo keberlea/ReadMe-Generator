@@ -11,6 +11,7 @@ let questions = [];
                 type: 'input',
                 name: 'Title',
                 message: 'What is the title of your project? Required',
+                //make sure there is an answer that is more than 1 character
                 validate: function (answer) {
                     if (answer.length < 1) {
                         return console.log("A valid project title is required.");
@@ -45,6 +46,7 @@ let questions = [];
                 name: 'Contributers',
                 message: 'Are there guidelines for others to contribute to your project?'
             },
+            //chose the type of License for the repository
             {
                 type: 'list',
                 name: 'License',

@@ -1,6 +1,4 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
+// get License Badge for top of readme file
 function getLicenseBadge (License) {
   const licenseImgMap = {
     'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
@@ -13,32 +11,35 @@ function getLicenseBadge (License) {
   ![badge](${licenseImg})`
   }
 
-
+// get correct license and badge for the license section of the ReadMe file
 function getLicense (License) {
   if (!License) {
     return ''
   }
+  //img links to correct badge for each type of License referenced
   const licenseImgMap = {
     'MIT': 'https://img.shields.io/badge/License-MIT-yellow.svg',
     'Apache 2.0': 'https://img.shields.io/badge/License-Apache_2.0-blue.svg',
     'GNU GPL v3': 'https://img.shields.io/badge/License-GPLv3-blue.svg',
     // add more license IMG URLs here as needed
   }
+  //url links to correct licenses for each type of License referenced
   const licenseUrlMap = {
     'MIT': 'https://opensource.org/licenses/MIT',
     'Apache 2.0': 'https://opensource.org/licenses/Apache-2.0',
     'GNU GPL v3': 'https://www.gnu.org/licenses/gpl-3.0',
     // add more license URLs here as needed
   }
+  //Licence Url const
   const licenseUrl = licenseUrlMap[License]
-
+  //IMG URL const
   const licenseImg = licenseImgMap[License]
 
   return `
   [![License](${licenseImg})](https://opensource.org/licenses/${licenseUrl})`
 }
 
-
+//function to generate markdown of the README file
 function generateMarkdown (answers) {
   return (
     `
@@ -51,14 +52,14 @@ function generateMarkdown (answers) {
   
 
   ## Description
-    ${answers.Description}
+  ${answers.Description}
 
   ## Table of Contents
    - [Description](#Description)
    - [Installation](#Installation)
    - [Usage](#Usage)
    - [License](#License)
-   - [Contributing](#Contributing)
+   - [Contributing](#Contributers)
    - [Tests](#Tests)
    - [Questions](#Questions)
 
@@ -73,7 +74,7 @@ function generateMarkdown (answers) {
   getLicense(answers.License)
   +
   `
-  <br>
+
   This application is covered by the ${answers.License} license.
   
   ## Contributing
@@ -84,7 +85,7 @@ function generateMarkdown (answers) {
 
   ## Questions
   Link to GitHub profile: https://github.com/${answers.GitHub}
-  <br>
+  
   If you have questions you can reach me by email at the following address: ${answers.Email}
   `
   )
@@ -92,4 +93,4 @@ function generateMarkdown (answers) {
 
 module.exports = generateMarkdown
 
-//![badge](https/img.shields.io/badge.license-${answers.License}-brightgreen)
+

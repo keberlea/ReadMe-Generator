@@ -12,7 +12,7 @@
    - [Installation](#Installation)
    - [Usage](#Usage)
    - [License](#License)
-   - [Contributing](#Contributers)
+   - [Contributing](#Contributing)
    - [Tests](#Tests)
    - [Questions](#Questions)
 
@@ -35,6 +35,7 @@
 
   ## Questions
   Link to GitHub profile: https://github.com/keberlea
+  
   If you have questions you can reach me by email at the following address: alicia.keberle@gmail.com
 
 
