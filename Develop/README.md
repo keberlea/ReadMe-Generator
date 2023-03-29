@@ -1,11 +1,11 @@
 
-  # this is a test run
+  # This is a test run
   
   ![badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
   
 
   ## Description
-  to see an actual file written but this application please look at the README file in the main file area for my reposrepository , the created files go into Develop folder.
+  To see an actual readme file created with purpose see main readme in main file folder, all readme created using application go into the develop folder
 
   ## Table of Contents
    - [Description](#Description)
@@ -17,10 +17,10 @@
    - [Questions](#Questions)
 
   ## Installation
-  see main readme file
+  be cool
 
   ## Usage
-  THIS IS IT LOL
+  see main readme
 
   ## License 
   
@@ -29,13 +29,13 @@
   This application is covered by the Apache 2.0 license.
   
   ## Contributing
-  see main readme file
+  see main readme
 
   ## Tests
-  see main readme file
+  see main readme
 
   ## Questions
-  Link to GitHub profile: https://github.com/eberlea
+  Link to GitHub profile: https://github.com/keberlea
   
   If you have questions you can reach me by email at the following address: alicia.keberle@gmail.com
   
